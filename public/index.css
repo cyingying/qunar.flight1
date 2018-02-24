@@ -1,0 +1,237 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    font-family: arial,helvetica,STHeitiSC-Light,Heiti SC,droidsansfallback,dengxian,microsoft yahei;
+}
+#fightlist{
+    position: relative;
+    width: 100%;
+    height: 100px;
+}
+/*page-header*/
+.page-header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 44px;
+    background: #1ba9ba;
+    line-height: 44px;
+    font-weight:400; 
+    z-index: 1000;
+}
+.page-header .left-action{
+    position: absolute;
+    left: 0;
+    width: 10%;
+    height: 44px;
+    padding-left: 10px;
+    color: #7ff;
+    text-align: left;
+    vertical-align: middle;   
+}
+.page-header .page-title{
+    width: 90px;
+    height: 44px;
+    text-align: center;
+    color: #fff;
+    margin: 0 60px;
+}
+
+/*page-content*/
+.page-content{
+    position: absolute;
+    width: 100%;
+}
+section .new-date-bar{
+    position: absolute;
+    top:44px;
+    width: 100%;
+    height: 59px;
+    background:#1ba9ba; 
+}
+section .new-date-bar .date{
+    float: left;
+    width: 310px;
+    height: 59px;
+} 
+section .new-date-bar .date .item{
+    float: left;
+    width: 62px;
+    height: 54px;
+    color:#fff;
+}
+section .new-date-bar .date .active{
+    background-color: #eee;
+    border-radius: 10px;
+    color:#1ba9ba;
+}
+section .new-date-bar .date .item .item-inner{
+    width: 56px;
+    height: 52px;
+    margin: 0 3px;
+}
+.item .item-inner .d-text:first-child{
+    margin-top: 2px;
+}
+.item .item-inner .d-text{
+    /*background: #eee;*/
+    margin-bottom: 2px;
+    width: 56px;
+    height: 14px;
+    line-height: 14px;
+    font-size: 14px;
+    text-align: center;
+}
+.item .item-inner .d-text .d-price{
+    font-family:Arial;
+    font-size: 14px;
+}
+section .new-date-bar .datename{
+    float: left;
+    width: 65px;
+    height: 59px;
+    color: #fff;
+}
+section .new-date-bar .datename i{
+    display: block;
+    width: 60px;
+    height: 30px;
+}
+section .new-date-bar .datename .moredate{
+    height: 10px;
+    font-size: 13px;
+    text-align: center;
+}
+/*flight-list*/
+.flight-list{
+    margin-top: 104px;
+    width:100%;
+    height: 2223px;
+    font-size: 12px;
+    background: #fff;
+}
+.flight-list ul{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    list-style: none;
+}
+.flight-list ul .list-row{
+    width:100%;
+    display: flex;
+    height: 66px;
+    padding: 10px 0px;
+    position: relative;
+    border-bottom: 1px solid rgba(197,197,197,0.3);
+}
+.flight-list ul .list-row .list-info{
+    flex: 5;
+}
+.list-info .airport-info{
+    height: 46px;
+}
+.list-info .airport-info .from-info{
+    float: left;
+    width: 30%;
+    font-size:12px;
+    height: 46px;
+}
+.list-info .airport-info .from-info .from-time{
+    font-size: 20px;
+    color: #333;
+    line-height: 20px;
+}
+.list-info .airport-info .from-info .from-place{
+    font-size: 12px;
+    line-height: 14px;
+    margin: 6px 0;
+    color: #999;
+}
+.list-info .airport-info .time-info{
+    float: left;
+    width: 39%;
+    text-align: center;
+    font-size:12px;
+    box-sizing: border-box;
+    color: #999;
+    padding: 0 8px;
+    margin-top:20px; 
+    height: 26px;
+}
+.list-info .airport-info .to-info{
+    float: left;
+    width: 30%;
+    font-size:12px;
+    position: relative;
+    text-align: right;
+    height: 46px;
+}
+.list-info .airport-info .to-info .to-time{
+    font-size: 20px;
+    color: #333;
+    line-height: 20px;
+}
+.list-info .airport-info .to-info .to-place{
+    font-size: 12px;
+    line-height: 14px;
+    margin: 6px 0;
+    color: #999;
+}
+.list-info .compony-info{
+   height: 14px;
+   margin-top: 6px;
+   line-height: 14px;
+}
+.list-info .compony-info span{
+   padding: 0 2px;
+   font-size: 12px
+}
+.flight-list ul .list-row .price{
+    flex: 2;
+    text-align: right;
+}
+.price .price-info{
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    color:#ff8205;
+}
+.price .more-info{
+    height: 12px;
+    margin-top: 6px;
+    color: #999;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+/*bottom*/
+.bottom section{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 48px;
+    background: #f8f8f8;
+    border-top: 1px solid rgba(197, 197, 197, 0.3);
+    display: flex;
+}
+.bottom section .rank{
+    width: 25%;
+    text-align: center;
+}
+.bottom section .active{
+    color:#1ba9ba;
+}
+.bottom section .rank i{
+    display: block;
+    font-size: 12px;
+    height: 19px;
+    line-height:19px;
+    margin-top: 3px;
+}
+.bottom section .rank span{
+    display: block;
+    font-size: 12px;
+    height: 18px;
+    line-height:18px;
+}
